@@ -6,6 +6,8 @@ MCUFRIEND_kbv tft;
 #include <Fonts/FreeSans12pt7b.h>
 #include <Fonts/FreeSerif12pt7b.h>
 #include <Fonts/FreeMonoBold24pt7b.h>
+#include <Fonts/Picopixel.h>
+#include <Fonts/FreeMono9pt7b.h>
 
 #include <FreeDefaultFonts.h>
 
@@ -26,7 +28,9 @@ void setup() {
     tft.begin(ID);
     tft.setRotation(0);
    tft.fillScreen(BLACK);
-   showmsgXY(5, 50, 2, &FreeSans9pt7b, "Test");
+   showmsgXY(5, 50, 2, &FreeMono9pt7b,YELLOW, "Test");
+   tft.setRotation(45);
+   showmsgXY(5, 50, 2, &FreeMono9pt7b,BLUE, "Test");
 }
 
 void loop() {
@@ -36,14 +40,14 @@ void loop() {
 
 }
 
-void showmsgXY(int x, int y, int sz, const GFXfont *f, const char *msg)
+void showmsgXY(int x, int y, int sz, const GFXfont *f,int colour_t, const char *msg)
 {
     int16_t x1, y1;
     uint16_t wid, ht;
     tft.drawFastHLine(0, y+10, tft.width(), WHITE);
     tft.setFont(f);
     tft.setCursor(x, y);
-    tft.setTextColor(BLUE);
+    tft.setTextColor(colour_t);
     tft.setTextSize(sz);
     tft.print(msg);
     //delay(20);
