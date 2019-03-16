@@ -42,7 +42,7 @@ Write Yellow text, at specified position and font
 
 `showmsgXY(5, 50, 2, &FreeMono9pt7b,YELLOW, "Test");`
 
-![Yellow text](https://github.com/SpiteyBill/arduino-tft-text/blob/master/Images/IMG_20190316_153050.jpg)
+![Yellow text](https://github.com/SpiteyBill/arduino-tft-text/blob/master/Images/IMG_20190316_153124.jpg)
 
 Set rotation at 90 deg (although it says 45)
 
@@ -52,9 +52,7 @@ Write Blue text, at specified position and font
 
 `showmsgXY(5, 50, 2, &FreeMono9pt7b,BLUE, "Test");`
 
-![Blue text](https://github.com/SpiteyBill/arduino-tft-text/blob/master/Images/IMG_20190316_153124.jpg)
-
-
+![Blue text](https://github.com/SpiteyBill/arduino-tft-text/blob/master/Images/IMG_20190316_153050.jpg)
 
 
 
