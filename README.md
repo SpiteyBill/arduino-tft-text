@@ -25,11 +25,34 @@ If you don't make this change, the screen is constantly white as seen below.
 
 #### Test builds
 
-The function that writes text on the screen is 
-'''
-void showmsgXY(int x, int y, int sz, const GFXfont *f,int colour_t, const char *msg)
-'''
+The function that writes text on the screen is
 
+
+`void showmsgXY(int x, int y, int sz, const GFXfont *f,int colour_t, const char *msg)`
+
+It draws a horizontal line underneath the text as well.
+
+Examples:
+
+Set the rotation of the text (0 degrees)
+
+`tft.setRotation(0);`
+
+Write Yellow text, at specified position and font
+
+`showmsgXY(5, 50, 2, &FreeMono9pt7b,YELLOW, "Test");`
+
+![Yellow text](https://github.com/SpiteyBill/arduino-tft-text/blob/master/Images/IMG_20190316_153050.jpg)
+
+Set rotation at 90 deg (although it says 45)
+
+`tft.setRotation(45);`
+
+Write Blue text, at specified position and font
+
+`showmsgXY(5, 50, 2, &FreeMono9pt7b,BLUE, "Test");`
+
+![Blue text](https://github.com/SpiteyBill/arduino-tft-text/blob/master/Images/IMG_20190316_153124.jpg)
 
 
 
