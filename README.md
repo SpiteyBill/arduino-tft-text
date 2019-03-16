@@ -19,7 +19,17 @@ In MCUFRIEND_kbv-2.9.8/MCUFRIEND_kbv.cpp, uncomment these lines 11 and 12:
 #define SUPPORT_8347A             //HX8347-A +500 bytes, 0.27s
 ```
 
-If you don't make this change, the screen is constantly white.
+If you don't make this change, the screen is constantly white as seen below.
+
+![Before Change](https://github.com/SpiteyBill/arduino-tft-text/blob/master/Images/IMG_20190316_153046.jpg)
+
+#### Test builds
+
+The function that writes text on the screen is 
+'''
+void showmsgXY(int x, int y, int sz, const GFXfont *f,int colour_t, const char *msg)
+'''
+
 
 
 
