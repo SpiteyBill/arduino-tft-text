@@ -28,7 +28,7 @@ void setup() {
     tft.begin(ID);
     tft.setRotation(0);
    tft.fillScreen(BLACK);
-   showmsgXY(5, 50, 2, &FreeMono9pt7b,YELLOW, "Test");
+   //showmsgXY(5, 50, 2, &FreeMono9pt7b,YELLOW, "Test");
    tft.setRotation(45);
    showmsgXY(5, 50, 2, &FreeMono9pt7b,BLUE, "Test");
 }

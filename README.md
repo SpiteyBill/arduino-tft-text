@@ -1,7 +1,17 @@
-# Arduino TFT Projects
-I am using a TFT screen and Arduino MEGA.
-Using Adafruit-GFX and MCUFRIEND_kbv.2.9.8
+# Arduino TFT Project
 
+#### Aim
+To setup 2.8" TFT screen using Arduino
+
+#### Boards used
+1. [TFT Screen](https://www.ebay.co.uk/itm/2-4-Inch-LCD-TFT-Touch-Screen-Display-Shield-Module-for-Arduino-UNO-MEGA-2560-PI/263982083387?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)
+2. [Arduino MEGA equivalent](https://www.ebay.co.uk/itm/Arduino-Mega-2560-R3-ATmega328P-16U2-MU-Compatible-Board-FREE-USB-Cable-UK/262595532334?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)
+
+#### Libraries used
+1. [Adafruit-GFX](https://github.com/adafruit/Adafruit-GFX-Library)
+2. [MCUFRIEND_kbv](https://github.com/prenticedavid/MCUFRIEND_kbv)
+
+#### Changes required
 In MCUFRIEND_kbv-2.9.8/MCUFRIEND_kbv.cpp, uncomment these lines 11 and 12:
 
 ```
@@ -9,7 +19,7 @@ In MCUFRIEND_kbv-2.9.8/MCUFRIEND_kbv.cpp, uncomment these lines 11 and 12:
 #define SUPPORT_8347A             //HX8347-A +500 bytes, 0.27s
 ```
 
-This makes the TFT screen work.
+If you don't make this change, the screen is constantly white.
 
 
 
