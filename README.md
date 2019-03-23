@@ -48,7 +48,7 @@ Set rotation at 90 deg (although it says 45)
 
 `tft.setRotation(45);`
 
-Write Blue text, at specified position and font
+Write Blue text, at specified position and font:
 
 `showmsgXY(5, 50, 2, &FreeMono9pt7b,BLUE, "Test");`
 
